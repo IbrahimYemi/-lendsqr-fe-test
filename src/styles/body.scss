@@ -1,0 +1,34 @@
+$maincolor:#39CDCC;
+$textcolor:#fff;
+$font-family:Nunito Sans;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    // css debugger
+    // outline: 1px solid limegreen !important;
+    // margin: 1rem !important;
+}
+
+body {
+  font-family: $font-family;
+  background-color: #f0eeee;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.dashboard {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+

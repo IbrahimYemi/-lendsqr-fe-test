@@ -1,0 +1,79 @@
+.filter-card {
+    background: #FFFFFF;
+    border: 1px solid rgba(84, 95, 125, 0.14);
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    position: absolute;
+    left: 0.5rem;
+    top: 3rem;
+    width: 18rem;
+    padding: 1rem;
+
+    .filter-input {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 0.6rem 0.5rem;
+
+        input,
+        select {
+            background: rgb(255, 255, 255, 0.2);
+            border: 1px solid #213F7D;
+            border-radius: 8px;
+            padding: 10px 15px;
+            outline: none;
+            margin-top: 10px;
+            color: #213F7D;
+
+            &::placeholder {
+                font-family: 'Work Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 16px;
+                color: #545F7D;
+                opacity: 0.7;
+            }
+        }
+
+        span {
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            color: #545F7D;
+        }
+    }
+
+    .btn-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0.5rem;
+
+        button {
+            border-radius: 8px;
+            padding: 0.8rem 1.6rem;
+            cursor: pointer;
+
+            &.reset {
+                border: 1px solid #545F7D;
+                background: #FFFFFF;
+                color: #213F7D;
+            }
+
+            &.submit {
+                background: #39CDCC;
+                border: 1px solid #39CDCC;
+                color: #FFFFFF;
+            }
+
+            &:hover {
+                background: rgba(45, 45, 45, 0.4);
+            }
+        }
+    }
+}

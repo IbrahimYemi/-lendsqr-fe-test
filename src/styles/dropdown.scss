@@ -1,0 +1,38 @@
+.item-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    margin: 5px auto;
+    height: 4rem;
+    background: #FFFFFF;
+    z-index: 1;
+    border: 1px solid rgba(84, 95, 125, 0.04);
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px;
+    cursor: pointer;
+    width: 8rem;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    color: #545F7D;
+    border-radius: 4px;
+
+    >* {
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    &:hover {
+        background-color: lightblue;
+    }
+}

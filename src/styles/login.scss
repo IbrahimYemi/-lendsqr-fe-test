@@ -1,0 +1,167 @@
+$maincolor:#39CDCC;
+$textcolor:#fff;
+$font-family:Nunito Sans;
+$headercolor: #545F7D;
+
+
+.login-container {
+    display: flex;
+    height: 100vh;
+    overflow-y: hidden;
+
+    .img-div {
+        width: 50%;
+        position: relative;
+        padding-left: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        .root-logo {
+            position: absolute;
+            top: 2rem;
+            left: 4rem;
+        }
+    }
+
+
+
+    .login-form {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .center-item {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            h1 {
+                font-family: 'Avenir Next';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 15px;
+                margin-bottom: 0;
+                letter-spacing: -0.04em;
+                color: #213F7D;
+                text-align: left;
+                padding-left: 40px;
+            }
+
+            small {
+                font-family: 'Avenir Next';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 27px;
+                color: #545F7D;
+                text-align: left;
+                padding-left: 40px;
+
+            }
+
+            form {
+                width: 100%;
+                padding: 40px;
+                background-color: #fff;
+
+                .input-card {
+                    display: flex;
+                    align-items: center;
+                    border: 2px solid rgba(84, 95, 125, 0.15);
+                    padding: 0.7rem .5rem;
+                    border-radius: 5px;
+                    margin: 20px 0;
+
+                    input {
+                        width: 25vw;
+                        outline: none;
+                        border: none;
+                        background-color: transparent;
+                        font-size: 16px;
+
+                        &::placeholder {
+                            font-family: 'Avenir Next';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 19px;
+                            color: #545F7D;
+                            opacity: 0.6;
+                        }
+                    }
+
+                    .show-password {
+                        outline: none;
+                        background: none;
+                        color: $maincolor;
+                        border: none;
+                        cursor: pointer;
+                    }
+                }
+
+                .btn-form {
+                    background-color: $maincolor;
+                    color: $textcolor;
+                    width: 100%;
+                    outline: none;
+                    border: none;
+                    border-radius: 8px;
+                    font-size: 20px;
+                    font-weight: 550;
+                    padding: 10px;
+                    margin-top: 30px;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: rgba(84, 95, 125, 0.15);
+                        color: $maincolor;
+                    }
+
+                }
+
+                p {
+                    text-align: left;
+                    margin-bottom: 0px;
+                    font-size: 12px;
+
+                    a {
+                        text-align: center;
+                        text-decoration: none;
+                        color: $maincolor;
+                        padding-left: 3px;
+
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:692px) {
+    .center-item {
+        form {
+            width: 60%;
+        }
+    }
+}
+
+@media(max-width:452px) {
+    .center-item {
+        form {
+            width: 70%;
+            padding: 25px;
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}

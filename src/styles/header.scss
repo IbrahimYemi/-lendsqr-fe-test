@@ -1,0 +1,103 @@
+$maincolor:#39CDCC;
+$textcolor:#fff;
+$font-family:Nunito Sans;
+
+
+.header {
+    background: #FFFFFF;
+    height: 4rem;
+    padding: 0.4rem 2rem;
+    box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .search-card {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        height: 2rem;
+        background: #FFFFFF;
+        border: 1px solid rgb(33, 63, 125, 0.2);
+        border-radius: 8px;
+
+        input {
+            width: 20vw;
+            border-radius: 5px;
+            padding: 0 0.3rem;
+            outline: none;
+            border: none;
+            background-color: transparent;
+            font-size: 16px;
+
+            &::placeholder {
+                font-family: 'Avenir Next';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 19px;
+                color: #545F7D;
+                opacity: 0.6;
+            }
+        }
+
+        .search-btn {
+            outline: none;
+            background: $maincolor;
+            border: none;
+            cursor: pointer;
+            height: 2rem;
+            padding: 0.4rem 0.6rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+
+            .icon {
+                color: $textcolor;
+            }
+        }
+    }
+
+    .header-profile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        * {
+            margin: 0 0.5rem;
+        }
+
+        span {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            text-decoration-line: underline;
+            color: #213F7D;
+        }
+
+        .profile-image {
+            height: 2.5rem;
+            width: 2.5rem;
+            border-radius: 50%;
+
+            img {
+                height: 2.5rem;
+                width: 2.5rem;
+                border-radius: 50%;
+            }
+        }
+
+        p {
+            display: flex;
+            align-items: center;
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            color: #213F7D;
+        }
+    }
+}
