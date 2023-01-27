@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     padding: 4rem;
-    background-color: #fbfbfb;
 
     .back-tick {
         display: flex;
@@ -281,6 +280,112 @@
             border: 1px solid rgb(84, 95, 125, 0.2);
             margin: 0.5rem;
             height: 1.5px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .user-details {
+        padding: 4rem 1rem;
+
+        .user-tab {
+            flex-direction: column;
+            align-items: flex-start;
+
+            p {
+                font-size: 22px;
+                padding: 0 1rem;
+            }
+
+            .btn-group {
+                flex-direction: column;
+
+                button {
+                    padding: 0.5rem 0.5rem;
+                    width: 10rem;
+                    font-size: 12px;
+                    margin: 0.3rem 0.5rem;
+                }
+            }
+        }
+
+        .head-details {
+            margin: 100%;
+            margin: 1rem 0;
+
+
+            .upper-sect {
+                flex-direction: column;
+                align-items: flex-start;
+                margin: 1rem 0.5rem;
+
+                hr {
+                    transform: rotate(180);
+                    width: 100%;
+                    margin: 1rem 0rem;
+                    height: 1.5px;
+                }
+
+
+                .avatar-div {
+                    flex-direction: column;
+                }
+            }
+
+            .list-link {
+                overflow: scroll;
+
+                span {
+                    font-weight: 400;
+                    font-size: 14px;
+                    text-align: center;
+                    color: rgba(0, 0, 0, 0.8);
+                    padding: 0.5rem 1rem;
+                    letter-spacing: 1px;
+                    cursor: pointer;
+
+                    &.active {
+                        color: #39CDCC;
+                        border-bottom: 3px solid #39CDCC;
+                    }
+                }
+            }
+        }
+
+        .details-body {
+
+            .section,
+            .section2 {
+                width: 7rem auto;
+                overflow-x: hidden;
+
+
+                .section-body {
+
+                    .section-item {
+                        display: grid;
+                        grid-template-columns: 1;
+
+                        .up {
+                            margin-bottom: 0.1rem;
+                            word-wrap: break-word;
+                            font-size: 12-x;
+                        }
+
+                        .down {
+                            word-wrap: break-word;
+                            width: 7rem;
+                            font-weight: 550;
+                        }
+                    }
+                }
+            }
+
+            hr {
+                border: 1px solid rgb(84, 95, 125, 0.2);
+                margin: 0.5rem;
+                height: 1.5px;
+            }
         }
     }
 }

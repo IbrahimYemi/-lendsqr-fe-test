@@ -15,7 +15,7 @@ interface Props {
 const EducationInfo: React.FC<Props> = ({ info }) => {
     return (
         <div className="section2">
-            <p className="title">Education ad Employment</p>
+            <p className="title">Education and Employment</p>
             <div className="section-body">
                 <div className="section-item">
                     <span className="up">LEVEL OF EDUCATION</span>
@@ -39,7 +39,7 @@ const EducationInfo: React.FC<Props> = ({ info }) => {
                 </div>
                 <div className="section-item">
                     <span className="up">MONTHLY INCOME</span>
-                    <span className="down">{info.monthlyIncome[0]+ " - " +info.monthlyIncome[1]}</span>
+                    <span className="down">{'₦'+info.monthlyIncome[0]+ " - ₦" +info.monthlyIncome[1]}</span>
                 </div>
                 <div className="section-item">
                     <span className="up">LOAN REPAYMENT</span>

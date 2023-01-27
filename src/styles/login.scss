@@ -146,21 +146,50 @@ $headercolor: #545F7D;
 }
 
 @media(max-width:692px) {
-    .center-item {
-        form {
-            width: 60%;
+    .login-container {
+        height: auto;
+        flex-direction: column;
+
+        .img-div {
+            width: 100%;
+
+            .login-image {
+                height: auto;
+                max-width: 100%;
+                margin-top: 40%;
+                margin-bottom: 10%;
+            }
         }
-    }
-}
 
-@media(max-width:452px) {
-    .center-item {
-        form {
-            width: 70%;
-            padding: 25px;
-
-            p {
-                font-size: 14px;
+        .login-form {
+            width: 100%;
+            padding: 20px;
+    
+            .center-item {
+    
+                h1 {
+                    font-size: 30px;
+                    padding-left: 20px;
+                }
+    
+                small {
+                    font-size: 18px;
+                    line-height: 20px;
+                    padding-left: 20px;
+    
+                }
+    
+                form {
+                    padding: 20px;
+    
+                    .input-card {
+                        margin: 15px 0;
+    
+                        input {
+                            width: 80%;
+                        }
+                    }
+                }
             }
         }
     }

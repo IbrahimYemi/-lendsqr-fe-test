@@ -14,7 +14,7 @@ $font-family:Nunito Sans;
 
 body {
   font-family: $font-family;
-  background-color: #f0eeee;
+  background-color: #ffffff;
   height: auto;
   margin: 0;
   padding: 0;
@@ -30,5 +30,16 @@ body {
     width: 80%;
     display: flex;
     flex-direction: column;
+}
+
+@media (max-width :670px) {
+    .container {
+        position: relative;
+
+        .dashboard {
+            width: 100%;
+            padding-left: 10%;
+        }
+    }
 }
 

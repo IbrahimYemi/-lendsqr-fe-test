@@ -26,7 +26,6 @@ const Dropdown: React.FC<Props> = ({ userId }) => {
         } catch (e) {
             if (e instanceof Error) console.error(e.message);
         }
-        console.log(userId)
     }
 
     return (

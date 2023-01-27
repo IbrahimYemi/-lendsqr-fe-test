@@ -115,7 +115,7 @@ const HomeBody = () => {
         {showFilter && <FilterUser users={users} />}
         <Pagination data={users} start={start} currentPage={currentPage} setCurrentPage={setCurrentPage} itemsPerPage={itemsPerPage} setItemsPerPage={setItemsPerPage} />
       </div>:
-      <div className="table"> <h3 style={{color:"red", margin: "auto", padding:"2rem"}} >NO DATA AVAILABLE</h3>  </div>
+      <div className="table"> <h3 style={{color:"red", margin: "auto", padding:"2rem"}} >NO DATA LOADING...</h3>  </div>
       }
     </div>
   )

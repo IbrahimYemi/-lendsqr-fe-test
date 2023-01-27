@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import logo from '../images/navbar/Group.png'
 import briefcase from '../images/navbar/briefcase 1.png'
-import vector from '../images/navbar/Vector.png'
+import vector from '../images/dashboard/Union.png'
 import home from '../images/navbar/home 1.png'
 import user from '../images/navbar/user-friends 1.png'
 import karma from '../images/navbar/user-times 1.png'
@@ -29,6 +29,7 @@ import { useNavigate } from 'react-router-dom'
 
 const Navbar = () => {
     const navigate = useNavigate()
+    const [navOpen, setNavOpen] = useState(false)
     const [active, setActiveIndex] = useState<number>(1);
 
     const handleClick = (index: number) => {
@@ -40,11 +41,16 @@ const Navbar = () => {
         navigate('/')
     }
 
+    const handleNavigator = () => {
+        setNavOpen(!navOpen)
+    }
+
 
     return (
-        <div className='navbar' >
-            <span className='root-logo' >
-                <img src={logo} alt="logo" />
+        <div className={navOpen? 'half navbar' :'navbar'} >
+            <span onClick={handleNavigator} className='root-logo' >
+                <img className="false-media-response-logo" src={!navOpen? vector : logo} alt="logo" />
+                <img className="true-media-response-logo" src={!navOpen? logo : logo} alt="logo" />
             </span>
             <div className='nav' >
                 <div className="switch">
@@ -68,7 +74,7 @@ const Navbar = () => {
                     <span>Dashboard</span>
                 </div>
 
-                <p style={{ paddingLeft: "2rem", color: "#545F7D", fontSize: "12px" }} >CUSTOMERS</p>
+                <p>CUSTOMERS</p>
                 <div className={active === 1 ? 'nav-link active' : 'nav-link'}
                     onClick={() => handleClickUser(1)}>
                     <img src={user} alt="dashboard" />
@@ -112,7 +118,7 @@ const Navbar = () => {
                 <br />
 
 
-                <p style={{ paddingLeft: "2rem", color: "#545F7D", fontSize: "12px" }} >BUSINESSES</p>
+                <p>BUSINESSES</p>
                 <div className={active === 9 ? 'nav-link active' : 'nav-link'}
                     onClick={() => handleClick(9)}>
                     <img src={briefcase} alt="dashboard" />
@@ -161,7 +167,7 @@ const Navbar = () => {
                 <br />
 
 
-                <p style={{ paddingLeft: "2rem", color: "#545F7D", fontSize: "12px" }} >SETTINGS</p>
+                <p>SETTINGS</p>
                 <div className={active === 18 ? 'nav-link active' : 'nav-link'}
                     onClick={() => handleClick(18)}>
                     <img src={preference} alt="dashboard" />

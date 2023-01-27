@@ -11,7 +11,7 @@
 
         .head-tab {
             background: #FFFFFF;
-            flex: 1 1 22%;
+            flex: 0 1 22%;
             border: 1px solid rgba(33, 63, 125, 0.06);
             box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
             border-radius: 4px;
@@ -132,6 +132,50 @@
                         color: #39CD62;
                     }
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .home-body {
+        padding: 2rem 1rem;
+    
+        .tab {
+    
+            .head-tab {
+                max-width: 15rem;
+                flex: 1 1 100%;
+                margin: 0.5rem auto;
+    
+                img {
+                    height: 2rem;
+                    width: 2rem;
+                }
+    
+                small {
+                    margin: 5px 0;
+                }
+    
+                h3 {
+                    font-size: 20px;
+                    line-height: 18px;
+                }
+            }
+    
+        }
+    
+        .table {
+            overflow: scroll;
+    
+            .table-head {
+                width: auto;
+                width: 70rem;
+            }
+    
+            .table-row {
+                margin: 1rem 0.05rem;
+                width: 70rem;
             }
         }
     }
