@@ -27,7 +27,7 @@ const EducationInfo: React.FC<Props> = ({ info }) => {
                 </div>
                 <div className="section-item">
                     <span className="up">SECTOR OF EMPLOYMENT</span>
-                    <span className="down">{info.employmentStatus}</span>
+                    <span className="down">{info.sector}</span>
                 </div>
                 <div className="section-item">
                     <span className="up">DURATION OF EMPLOYMENT</span>
@@ -43,7 +43,7 @@ const EducationInfo: React.FC<Props> = ({ info }) => {
                 </div>
                 <div className="section-item">
                     <span className="up">LOAN REPAYMENT</span>
-                    <span className="down">{info.loanRepayment}</span>
+                    <span className="down">₦{info.loanRepayment}</span>
                 </div>
             </div>
         </div>

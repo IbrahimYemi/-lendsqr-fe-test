@@ -48,7 +48,7 @@ const PersonalInfo: React.FC<Props> = ({info, email}) => {
                     <span className="down">{info.currency}</span>
                 </div>
                 <div className="section-item">
-                    <span className="up">TYPE OF RESIDENCE</span>
+                    <span className="up">RESIDENCE ADDRESS</span>
                     <span className="down">{info.address}</span>
                 </div>
             </div>
